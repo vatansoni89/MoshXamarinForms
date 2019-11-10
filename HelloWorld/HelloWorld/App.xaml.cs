@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace HelloWorld
 {
     public partial class App : Application
@@ -11,7 +12,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new GreetPage();
+            MainPage = new QuotesPage();
         }
 
         protected override void OnStart()
