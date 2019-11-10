@@ -21,3 +21,5 @@ Binding:
 
 BindingContext:
   We use it in case multiple attributes of a control being binded to single prop change(of another control).
+
+
