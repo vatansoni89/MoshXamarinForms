@@ -1,0 +1,16 @@
+Page Types:
+  Content
+  MasterDetails
+  Navigation
+  Carousel
+
+Twist:
+  If we have same label front and back, backend label will be only visible.
+
+
+
+Form:
+  Name of lbl given as x:Name="lblHello"
+  In constructor We initialize slider after InitializeComponent() as its getting initialized in that method.
+    (obj\Debug\netstandard2.0\GreetPage.xaml.g.cs)
+  
