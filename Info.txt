@@ -22,4 +22,8 @@ Binding:
 BindingContext:
   We use it in case multiple attributes of a control being binded to single prop change(of another control).
 
+Device.RuntimePlatform: Its used for detecting device os at run time.
+  Device.Android
+  Device.iOS
+
 
