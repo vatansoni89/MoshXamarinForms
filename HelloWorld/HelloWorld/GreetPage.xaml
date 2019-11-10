@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.GreetPage">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label   Text="{Binding
-                          Source={x:Reference sld1},
-                          Path=Value,
+        <BoxView Color="Green" Opacity="{Binding Source={x:Reference sld1},Path=Value}"></BoxView>
+        <Label BindingContext="{x:Reference sld1}"
+                 Text="{Binding Value,
                           StringFormat='value is {0:F2}'}"
-                 Opacity="{Binding
-                             Source={x:Reference sld1},
-                             Path=Value}"
+                 Opacity="{Binding Value}"
                  x:Name="lblHello" />
         <Slider x:Name="sld1" BackgroundColor="Blue" />
     </StackLayout>
