@@ -42,3 +42,8 @@ Property Element Syntax:
 			<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,40,0,0">
 			</OnPlatform>
 		</ContentPage.Padding>
+
+XamlCompilationOptions:
+  Compile: Include xaml file as part of compilation to catch error at compile time.
+  Skip this process for particular xaml file: XamlCompilation(XamlCompilationOptions.Skip)
+x

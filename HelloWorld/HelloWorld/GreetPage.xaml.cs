@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace HelloWorld
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Skip)]
     public partial class GreetPage : ContentPage
     {
         public GreetPage()
