@@ -26,4 +26,19 @@ Device.RuntimePlatform: Its used for detecting device os at run time.
   Device.Android
   Device.iOS
 
+Property Element Syntax:
+  Setting c# prop using xml element (not attribute)
+    exa:
+	  C# code:
+	    var x = new OnPlatform<Thickness>
+            {
+                Android = new Thickness(0),
+                iOS = new Thickness(0, 20, 0, 0)
+            };
+            Padding = x;
 
+	  XAML code To set Padding prop of page:
+	    <ContentPage.Padding>
+			<OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,40,0,0">
+			</OnPlatform>
+		</ContentPage.Padding>
