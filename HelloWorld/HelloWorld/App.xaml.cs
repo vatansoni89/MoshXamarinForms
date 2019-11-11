@@ -12,7 +12,8 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new StackPage();
+            //MainPage = new StacklayoutExercize1();
+            MainPage = new Instagram();
         }
 
         protected override void OnStart()
