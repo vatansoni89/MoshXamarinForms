@@ -46,4 +46,10 @@ Property Element Syntax:
 XamlCompilationOptions:
   Compile: Include xaml file as part of compilation to catch error at compile time.
   Skip this process for particular xaml file: XamlCompilation(XamlCompilationOptions.Skip)
-x
+
+Layout:
+  StackLayout:
+    By default it fills its parent container (full yellow page.).
+	default spacing between controls is 6 px
+	default orientaion is Vertical
+	nested stacklayout allowed.
