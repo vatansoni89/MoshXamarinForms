@@ -49,9 +49,16 @@ XamlCompilationOptions:
 
 Layout:
   StackLayout:
+    - To position element in single line, vertically or horizontally.
     - By default it fills its parent container (full yellow page.).
 	- default spacing between controls is 6 px
 	- default orientaion is Vertical
 	- nested stacklayout allowed.
 	- we set horizontalOptions or VerticalOptions as if we don't then Stacklasyout 
 	  background color will spill in that direction.
+  GridLayout:
+    - Calculator
+	- Photo Album
+	- Positioning the elements: Grid.Column, Grid.Row
+	- If column or Row span collides than whoever comes later wins.
+	- 
