@@ -61,4 +61,6 @@ Layout:
 	- Photo Album
 	- Positioning the elements: Grid.Column, Grid.Row
 	- If column or Row span collides than whoever comes later wins.
-	- 
+	- RowSpacing: Space b/w rows.
+	- ColumnSpacing: Space b/w columns.
+	- View is base class for all visual elements like label, images etc.
