@@ -52,7 +52,7 @@ Common Copy-Paste:
   
   
 
-Layout:
+Layout: Code behind overrides xaml design so if we have both then c# wins.
   StackLayout:
     - To position element in single line, vertically or horizontally.
     - By default it fills its parent container (full yellow page.).
