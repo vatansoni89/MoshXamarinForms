@@ -61,6 +61,7 @@ Layout: Code behind overrides xaml design so if we have both then c# wins.
 	- nested stacklayout allowed.
 	- we set horizontalOptions or VerticalOptions as if we don't then Stacklasyout 
 	  background color will spill in that direction.
+	-* We can have 'AbsoluteLayout.LayoutBounds="0, 1, 1, 100"' in stack layout (See Absolutelayout exercise 1 n 2) 
   GridLayout:
     - Calculator
 	- Photo Album
