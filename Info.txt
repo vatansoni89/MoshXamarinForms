@@ -47,6 +47,11 @@ XamlCompilationOptions:
   Compile: Include xaml file as part of compilation to catch error at compile time.
   Skip this process for particular xaml file: XamlCompilation(XamlCompilationOptions.Skip)
 
+Common Copy-Paste:
+  Padding="0,20,0,0"
+  
+  
+
 Layout:
   StackLayout:
     - To position element in single line, vertically or horizontally.
@@ -64,3 +69,9 @@ Layout:
 	- RowSpacing: Space b/w rows.
 	- ColumnSpacing: Space b/w columns.
 	- View is base class for all visual elements like label, images etc.
+  AbsoluteLayout:
+    - Anchor elements to edge of screen
+	- Overlay elements to top of each other.
+	- AbsoluteLayout.LayoutBounds="x,y,widthPx,heightPx"
+	- PositionProportional: x,y are propotional (in %)
+
