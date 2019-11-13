@@ -98,4 +98,6 @@ Images:
     AspectFit: Default (vertical-horizontal center)
     Fill (distorted img)  
   ActivityIndicator
-    IsLoading is prop of image binded to this.  
+    IsLoading is prop of image binded to this.
+  Build Action
+    Embeded resource
