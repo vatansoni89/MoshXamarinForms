@@ -93,4 +93,9 @@ Images:
 	Embed in Portable Class Library (PCL)
   Platform-specific (example icon, splash screens)
   UriImageSource
-    
+  Aspect
+    AspectFill: No distortion (but cropped)
+    AspectFit: Default (vertical-horizontal center)
+    Fill (distorted img)  
+  ActivityIndicator
+    IsLoading is prop of image binded to this.  
