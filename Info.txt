@@ -75,4 +75,22 @@ Layout: Code behind overrides xaml design so if we have both then c# wins.
 	- Overlay elements to top of each other.
 	- AbsoluteLayout.LayoutBounds="x,y,widthPx,heightPx"
 	- PositionProportional: x,y are propotional (in %)
+  RelativeLayout:
+    - More powerful than AbsoluteLayout.
+	- Overlay elements
+	- Apply constraints based on another element
+	- More control over position and size of element
+	AttachedBindableProp:
+	  XConstraint
+	  YConstraint
+	  WidthConstraint
+	  HeightConstraint
+	  BoundsConstraint
 
+Images:
+  Platform-independent (example background)
+    Download using a URI
+	Embed in Portable Class Library (PCL)
+  Platform-specific (example icon, splash screens)
+  UriImageSource
+    

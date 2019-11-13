@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +38,9 @@
     <EmbeddedResource Update="GridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Instagram.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -50,5 +53,47 @@
     <EmbeddedResource Update="StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AbsoluteLayoutExercise1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="AbsoluteLayoutExercise2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="AbsolutePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="GreetPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="GridLayoutExercise1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="GridPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ImagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Instagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="QuotesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="StacklayoutExercize1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="StackPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 </Project>
