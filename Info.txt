@@ -101,3 +101,8 @@ Images:
     IsLoading is prop of image binded to this.
   Build Action
     Embeded resource
+
+EmbeddedImage:
+  - This is a way to embed image in front end (xaml page)
+  - Create a class who implements IMarkupExtension, this class prop will be available to xaml as we 
+    define local type here (ie xmlns:local="clr-namespace:HelloWorld.MarkupExtensions; assembly=HelloWorld")

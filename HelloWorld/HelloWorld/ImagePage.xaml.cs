@@ -15,7 +15,6 @@ namespace HelloWorld
         public ImagePage()
         {
             InitializeComponent();
-            img1.Source = ImageSource.FromResource("HelloWorld.Images.Capture.JPG");
         }
     }
 }
