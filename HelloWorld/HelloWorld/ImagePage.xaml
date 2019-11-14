@@ -5,5 +5,5 @@
              xmlns:local="clr-namespace:HelloWorld.MarkupExtensions; assembly=HelloWorld"
              x:Class="HelloWorld.ImagePage">
 
-    <Image Source="{local:EmbeddedImage ResourceId=HelloWorld.Images.Capture.JPG}" />
+    <Image Source="{local:EmbeddedImage HelloWorld.Images.Capture.JPG}" />
 </ContentPage>

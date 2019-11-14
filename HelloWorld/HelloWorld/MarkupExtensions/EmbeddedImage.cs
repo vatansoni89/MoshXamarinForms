@@ -6,7 +6,8 @@ using Xamarin.Forms.Xaml;
 
 namespace HelloWorld.MarkupExtensions
 {
-    internal class EmbeddedImage : IMarkupExtension
+    [ContentProperty("ResourceId")]
+    public class EmbeddedImage : IMarkupExtension
     {
         public string ResourceId { get; set; }
 
