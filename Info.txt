@@ -101,9 +101,18 @@ Images:
     IsLoading is prop of image binded to this.
   Build Action
     Embeded resource
-
-EmbeddedImage:
-  - This is a way to embed image in front end (xaml page)
-  - Create a class who implements IMarkupExtension, this class prop will be available to xaml as we 
+  EmbeddedImage:
+    - This is a way to embed image in front end (xaml page)
+    - Create a class who implements IMarkupExtension, this class prop will be available to xaml as we 
     define local type here (ie xmlns:local="clr-namespace:HelloWorld.MarkupExtensions; assembly=HelloWorld")
-  - Use ContentProperty attribute to specify the property being used in xaml (i.e. [ContentProperty("ResourceId")])
+    - Use ContentProperty attribute to specify the property being used in xaml (i.e. [ContentProperty("ResourceId")])
+  Platform-specific-images
+    - http://icons8.com
+	Android:
+	  Lowercase letters
+	  Numbers
+	  Underscore
+	  Period
+	Application-Icon:
+	  - Android proj: Keep images in Resources folder which has 3 more folder for image size.
+	    iOS proj: Keep images in Resources folder.

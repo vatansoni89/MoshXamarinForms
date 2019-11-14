@@ -5,5 +5,7 @@
              xmlns:local="clr-namespace:HelloWorld.MarkupExtensions; assembly=HelloWorld"
              x:Class="HelloWorld.ImagePage">
 
-    <Image Source="{local:EmbeddedImage HelloWorld.Images.Capture.JPG}" />
+    <AbsoluteLayout>
+        <Button AbsoluteLayout.LayoutBounds="0.5,0.5,100,100" AbsoluteLayout.LayoutFlags="PositionProportional" ImageSource="clock.png" />
+    </AbsoluteLayout>
 </ContentPage>
