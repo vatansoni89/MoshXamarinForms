@@ -15,9 +15,17 @@ namespace HelloWorld
         public ListView()
         {
             InitializeComponent();
-            var names = new List<Contact> {
-                new Contact(){ Name = "Vatan", Status = "Status1", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
-                new Contact(){ Name = "Sonali", Status = "Status2", ImageUrl = "http://lorempixel.com/100/100/city/2/" }
+            var names = new List<ContactGroup> {
+                new ContactGroup("M","M")
+                {
+                    new Contact(){ Name = "Matan", Status = "Status1", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
+                    new Contact(){ Name = "Matan1", Status = "Status11", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
+                },
+
+                new ContactGroup("J","J")
+                {
+                    new Contact(){ Name = "Jonali", Status = "Status2", ImageUrl = "http://lorempixel.com/100/100/city/2/" }
+                }
             };
             lstNames.ItemsSource = names;
         }
