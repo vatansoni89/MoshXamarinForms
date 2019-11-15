@@ -14,7 +14,7 @@ namespace HelloWorld
 
             //MainPage = new StacklayoutExercize1();
             //MainPage = new Instagram();
-            MainPage = new ImagePage();
+            MainPage = new Demo();
         }
 
         protected override void OnStart()

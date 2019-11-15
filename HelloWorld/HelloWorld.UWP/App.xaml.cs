@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -39,8 +40,6 @@ namespace HelloWorld.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -53,6 +52,7 @@ namespace HelloWorld.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                ImageCircleRenderer.Init();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -79,7 +79,7 @@ namespace HelloWorld.UWP
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>
         /// <param name="e">Details about the navigation failure</param>
-        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        private void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }

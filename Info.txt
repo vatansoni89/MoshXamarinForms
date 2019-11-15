@@ -116,3 +116,9 @@ Images:
 	Application-Icon:
 	  - Android proj: Keep images in Resources folder which has 3 more folder for image size.
 	    iOS proj: Keep images in Resources folder.
+
+
+Rounded-Corner-Image:
+  Install nuget pkg Xam.Plugins.Forms.ImageCircle to each project.
+  Create namespace and copy paste fully qualified name from https://github.com/jamesmontemagno/ImageCirclePlugin
+
