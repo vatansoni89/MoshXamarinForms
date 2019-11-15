@@ -7,7 +7,7 @@
     <ListView x:Name="lstNames" SeparatorColor="Blue">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Name}" Detail="{Binding Status}" TextColor="GreenYellow" DetailColor="Brown" />
+                <ImageCell Text="{Binding Name}" Detail="{Binding Status}" ImageSource="{Binding ImageUrl}" TextColor="GreenYellow" DetailColor="Brown" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
