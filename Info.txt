@@ -123,4 +123,10 @@ Rounded-Corner-Image:
   Create namespace and copy paste fully qualified name from https://github.com/jamesmontemagno/ImageCirclePlugin
 
 Lists:
-  
+  If we bind list to a complex type then list will just show type bcz of default ToString() 
+  To bind complex data to list:
+    ListView
+	  ListView.ItemTemplate
+	    DataTemplate
+		  TextCell
+		  ImageCell

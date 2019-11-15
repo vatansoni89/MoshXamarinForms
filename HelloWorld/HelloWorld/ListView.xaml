@@ -4,5 +4,11 @@
              xmlns:helloWorld="clr-namespace:HelloWorld;assembly=HelloWorld"
              xmlns:helloWorld1="clr-namespace:HelloWorld;assembly=HelloWorld"
              x:Class="HelloWorld.ListView">
-    <ListView x:Name="lstNames" SeparatorColor="Blue" />
+    <ListView x:Name="lstNames" SeparatorColor="Blue">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}" Detail="{Binding Status}" TextColor="GreenYellow" DetailColor="Brown" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
