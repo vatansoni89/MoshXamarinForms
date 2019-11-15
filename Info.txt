@@ -122,3 +122,5 @@ Rounded-Corner-Image:
   Install nuget pkg Xam.Plugins.Forms.ImageCircle to each project.
   Create namespace and copy paste fully qualified name from https://github.com/jamesmontemagno/ImageCirclePlugin
 
+Lists:
+  
