@@ -16,8 +16,8 @@ namespace HelloWorld
         {
             InitializeComponent();
             var names = new List<Contact> {
-                new Contact(){ Name = "Vatan", Status = "Status1", ImageUrl = "http://lorempixel.com/1920/1080/city/1/" },
-                new Contact(){ Name = "Sonali", Status = "Status2", ImageUrl = "http://lorempixel.com/1920/1080/city/2/" }
+                new Contact(){ Name = "Vatan", Status = "Status1", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
+                new Contact(){ Name = "Sonali", Status = "Status2", ImageUrl = "http://lorempixel.com/100/100/city/2/" }
             };
             lstNames.ItemsSource = names;
         }

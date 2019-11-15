@@ -130,3 +130,17 @@ Lists:
 	    DataTemplate
 		  TextCell
 		  ImageCell
+		  ViewCell: We can put any element even nested StackLayout
+  Custom Cells:
+    ListView
+	  ListView.ItemTemplate
+	    DataTemplate
+		  ViewCell
+		    StackLayout
+			  Image
+			    StackLayout
+				  Label
+				  Label
+			  Button
+
+    
