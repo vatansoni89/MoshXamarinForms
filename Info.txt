@@ -143,4 +143,6 @@ Lists:
 				  Label
 			  Button
 
-    
+Handling Selections:
+  ItemSelected: First time both (Selected>Tapped) will be called on item selection.
+    ItemTapped: After first time it will be call always for an already selected item. (and not the ItemSelected)

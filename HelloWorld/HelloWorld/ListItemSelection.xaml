@@ -1,21 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:helloWorld="clr-namespace:HelloWorld;assembly=HelloWorld"
-             xmlns:helloWorld1="clr-namespace:HelloWorld;assembly=HelloWorld"
-             x:Class="HelloWorld.ListView">
-    <StackLayout>
+             x:Class="HelloWorld.ListItemSelection">
     <ListView
-        x:Name="lstNames"
+        x:Name="listContactGroup"
         IsGroupingEnabled="True"
         GroupDisplayBinding="{Binding Title}"
-        GroupShortNameBinding="{Binding ShortTitle}">
+        GroupShortNameBinding="{Binding ShortTitle}"
+        ItemTapped="listContactGroup_ItemTapped"
+        ItemSelected="listContactGroup_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Name}" Detail="{Binding Status}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-        <Label Text="byyi Labell"/>
-    </StackLayout>
 </ContentPage>
