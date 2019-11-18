@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.ListItemSelection">
     <ListView
-        x:Name="listContactGroup"
-        IsGroupingEnabled="True"
-        GroupDisplayBinding="{Binding Title}"
-        GroupShortNameBinding="{Binding ShortTitle}"
-        ItemTapped="listContactGroup_ItemTapped"
-        ItemSelected="listContactGroup_ItemSelected">
+        x:Name="listContact">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Name}" Detail="{Binding Status}" />
+                <TextCell Text="{Binding Name}" Detail="{Binding Status}">
+                    <TextCell.ContextActions>
+                        <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}" />
+                        <MenuItem Text="Delete" Clicked="Delete_Clicked" CommandParameter="{Binding .}" IsDestructive="True" />
+                    </TextCell.ContextActions>
+                </TextCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

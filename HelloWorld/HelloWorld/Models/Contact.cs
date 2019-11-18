@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HelloWorld.Models
 {
-    internal class Contact
+    public class Contact
     {
         public string Name { get; set; }
         public string Status { get; set; }

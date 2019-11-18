@@ -146,3 +146,9 @@ Lists:
 Handling Selections:
   ItemSelected: First time both (Selected>Tapped) will be called on item selection.
     ItemTapped: After first time it will be call always for an already selected item. (and not the ItemSelected)
+
+
+Context Action: Drag left a list item and then perform operation like Call, or Delete etc.
+  {Binding .}:
+   Binding the full object to eventargs argument.
+IsDestructive: True (Red color)
