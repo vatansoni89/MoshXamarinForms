@@ -2,17 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.ListItemSelection">
-    <ListView
-        x:Name="listContact" IsPullToRefreshEnabled="True" Refreshing="listContact_Refreshing">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Name}" Detail="{Binding Status}">
-                    <TextCell.ContextActions>
-                        <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}" />
-                        <MenuItem Text="Delete" Clicked="Delete_Clicked" CommandParameter="{Binding .}" IsDestructive="True" />
-                    </TextCell.ContextActions>
-                </TextCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <StackLayout>
+        <SearchBar Placeholder="Search" FontSize="Micro" TextChanged="SearchBar_TextChanged" />
+        <ListView x:Name="listContact" IsPullToRefreshEnabled="True" Refreshing="listContact_Refreshing">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Status}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}" />
+                            <MenuItem Text="Delete" Clicked="Delete_Clicked" CommandParameter="{Binding .}" IsDestructive="True" />
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

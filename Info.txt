@@ -156,3 +156,7 @@ IsDestructive: True (Red color)
 Pull to Refresh:
   Prop to set: IsPullToRefreshEnabled="True" Refreshing="listContact_Refreshing"
   To stop the refresh rotating symbol: listContact.EndRefresh();
+
+Searchbar for ListView:
+  <SearchBar TextChanged="..handler" .../>
+

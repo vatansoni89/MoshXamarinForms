@@ -15,22 +15,24 @@ namespace HelloWorld
     public partial class ListItemSelection : ContentPage
     {
         public ObservableCollection<Contact> ListContact { get; set; }
+        public string SearchString { get; set; }
 
         public ListItemSelection()
         {
             InitializeComponent();
-            ListContact = GetContacts();
+            ListContact = GetAllContacts();
             listContact.ItemsSource = ListContact;
         }
 
-        public ObservableCollection<Contact> GetContacts()
+        public ObservableCollection<Contact> GetAllContacts()
         {
-            return new ObservableCollection<Contact> {
+            ListContact = new ObservableCollection<Contact> {
                     new Contact(){ Name = "Matan", Status = "Status1", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
                     new Contact(){ Name = "Matan1", Status = "Status11", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
 
                     new Contact(){ Name = "Jonali", Status = "Status2", ImageUrl = "http://lorempixel.com/100/100/city/2/" }
             };
+            return ListContact;
         }
 
         private void listContact_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -57,12 +59,32 @@ namespace HelloWorld
             var menuItem = sender as MenuItem;
             var contact = menuItem.CommandParameter as Contact;
             ListContact.Remove(contact);
+            GetSearchedContacts(SearchString);
         }
 
         private void listContact_Refreshing(object sender, EventArgs e)
         {
-            listContact.ItemsSource = GetContacts();
+            listContact.ItemsSource = GetAllContacts();
             listContact.EndRefresh(); // listContact.IsRefreshing = false;
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchString = e.NewTextValue;
+            GetSearchedContacts(SearchString);
+        }
+
+        public void GetSearchedContacts(string str)
+        {
+            if (!string.IsNullOrEmpty(str) && !string.IsNullOrWhiteSpace(str))
+            {
+                var tempList = ListContact.Where(x => x.Name.ToLower().Contains(str.ToLower()));
+                listContact.ItemsSource = tempList;
+            }
+            else
+            {
+                listContact.ItemsSource = ListContact;
+            }
         }
     }
 }
