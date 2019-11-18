@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.ListItemSelection">
     <ListView
-        x:Name="listContact">
+        x:Name="listContact" IsPullToRefreshEnabled="True" Refreshing="listContact_Refreshing">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding Name}" Detail="{Binding Status}">

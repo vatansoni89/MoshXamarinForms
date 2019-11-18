@@ -19,13 +19,18 @@ namespace HelloWorld
         public ListItemSelection()
         {
             InitializeComponent();
-            ListContact = new ObservableCollection<Contact> {
+            ListContact = GetContacts();
+            listContact.ItemsSource = ListContact;
+        }
+
+        public ObservableCollection<Contact> GetContacts()
+        {
+            return new ObservableCollection<Contact> {
                     new Contact(){ Name = "Matan", Status = "Status1", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
                     new Contact(){ Name = "Matan1", Status = "Status11", ImageUrl = "http://lorempixel.com/100/100/city/1/" },
 
                     new Contact(){ Name = "Jonali", Status = "Status2", ImageUrl = "http://lorempixel.com/100/100/city/2/" }
             };
-            listContact.ItemsSource = ListContact;
         }
 
         private void listContact_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -52,6 +57,12 @@ namespace HelloWorld
             var menuItem = sender as MenuItem;
             var contact = menuItem.CommandParameter as Contact;
             ListContact.Remove(contact);
+        }
+
+        private void listContact_Refreshing(object sender, EventArgs e)
+        {
+            listContact.ItemsSource = GetContacts();
+            listContact.EndRefresh(); // listContact.IsRefreshing = false;
         }
     }
 }

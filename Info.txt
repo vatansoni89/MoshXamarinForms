@@ -152,3 +152,7 @@ Context Action: Drag left a list item and then perform operation like Call, or D
   {Binding .}:
    Binding the full object to eventargs argument.
 IsDestructive: True (Red color)
+
+Pull to Refresh:
+  Prop to set: IsPullToRefreshEnabled="True" Refreshing="listContact_Refreshing"
+  To stop the refresh rotating symbol: listContact.EndRefresh();
