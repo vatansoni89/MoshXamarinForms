@@ -14,7 +14,10 @@ namespace HelloWorld
 
             //MainPage = new StacklayoutExercize1();
             //MainPage = new Instagram();
-            MainPage = new ListItemSelection();
+            MainPage = new NavigationPage(new WelcomePage()) { 
+            BarBackgroundColor=Color.Gray,
+            BarTextColor=Color.Yellow
+            };
         }
 
         protected override void OnStart()

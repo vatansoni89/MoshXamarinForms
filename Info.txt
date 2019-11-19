@@ -160,3 +160,11 @@ Pull to Refresh:
 Searchbar for ListView:
   <SearchBar TextChanged="..handler" .../>
 
+Navigation:
+  Navigation.PushAsync(new IntroductionPage()) : Redirect from current page to argument page.
+  NavigationPage.HasNavigationBar: Enable or Disable navigation bar
+  To register navigation, create object of NavigationPage with first page as input in App.xaml.cs
+  Back to previos page:
+    Navigation.PopAsync()
+  Disable Default back button:
+    OnBackButtonPressed()
