@@ -184,10 +184,9 @@ Master-Detail Pages:
     listView.SelectedItem = null;
 	  This will again trigger listView_ItemSelected(..) so check e.SelectedItem and return if null
     
-Tabbed Page:
+Tabbed Page: Tabs are based on Title (and Logo prop)
   We can add any type of page to tabs and standard way is to add on xaml page.
   NavigationPage element requires Title property.
-  
   C# to XAML:
     MainPage = new NavigationPage(new ContactsPage()):
       <NavigationPage Title="Page2" Icon="clock.png">
@@ -195,3 +194,7 @@ Tabbed Page:
               <local:GreetPage/>
           </x:Arguments>
       </NavigationPage>
+
+Carosal Page: Swipe left or right or the pages.
+  Almost like tabbed page but Only Content type page and its derived pages can be added.
+  
