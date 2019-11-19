@@ -170,3 +170,12 @@ Navigation:
     OnBackButtonPressed()
   Navigation.PushModalAsync(new IntroductionPage()): If we want user to do some action and don't want to show Back-button (top)
     Navigation.PopModalAsync()
+
+Master-Detail Pages:
+  Data transfer through constructor of detail page.
+  Master Page: Contains list of contact.
+    Imp:
+      listView.ItemsSource (.cs)
+	  {Binding Name}
+  Detail Page: Show detail of list item on select.
+    
