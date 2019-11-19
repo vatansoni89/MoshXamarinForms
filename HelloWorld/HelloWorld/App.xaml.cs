@@ -19,7 +19,8 @@ namespace HelloWorld
             //    BarBackgroundColor = Color.Gray,
             //    BarTextColor = Color.Yellow
             //};
-            MainPage = new MDContactsPage();
+            //MainPage = new MDContactsPage();
+            MainPage = new TabbedPageExample();
         }
 
         protected override void OnStart()
