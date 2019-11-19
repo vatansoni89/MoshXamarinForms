@@ -7,7 +7,7 @@
              x:Class="HelloWorld.IntroductionPage"
              Title="Introduction">
     <StackLayout>
-        <Label Text="Welcome to Xamarin.Forms!"
+        <Label Text="Introduction to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand" />
         <Button Text="Back" Clicked="Button_Clicked" />

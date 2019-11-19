@@ -168,3 +168,5 @@ Navigation:
     Navigation.PopAsync()
   Disable Default back button:
     OnBackButtonPressed()
+  Navigation.PushModalAsync(new IntroductionPage()): If we want user to do some action and don't want to show Back-button (top)
+    Navigation.PopModalAsync()
