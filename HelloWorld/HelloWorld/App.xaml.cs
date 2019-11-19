@@ -14,11 +14,12 @@ namespace HelloWorld
 
             //MainPage = new StacklayoutExercize1();
             //MainPage = new Instagram();
-            MainPage = new NavigationPage(new ContactsPage())
-            {
-                BarBackgroundColor = Color.Gray,
-                BarTextColor = Color.Yellow
-            };
+            //MainPage = new NavigationPage(new ContactsPage())
+            //{
+            //    BarBackgroundColor = Color.Gray,
+            //    BarTextColor = Color.Yellow
+            //};
+            MainPage = new MDContactsPage();
         }
 
         protected override void OnStart()

@@ -1,6 +1,8 @@
 Page Types:
   Content
   MasterDetails
+    Master: Page
+	Detail: Page
   Navigation
   Carousel
 
