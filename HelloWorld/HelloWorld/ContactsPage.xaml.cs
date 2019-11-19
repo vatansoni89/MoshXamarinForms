@@ -25,8 +25,13 @@ namespace HelloWorld
 
         private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
             var contact = e.SelectedItem as Contact;
             Navigation.PushAsync(new ContactDetailPage(contact));
+            listView.SelectedItem = null;
         }
     }
 }
