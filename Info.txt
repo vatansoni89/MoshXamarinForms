@@ -206,3 +206,8 @@ Popup and ActionSheet:
 
 Toolbar: Displays in top navigation bar (Primary and Secondary(as ...))
   It must be wrapped in NavigationPage (app.xaml.cs)
+
+Forms and  Settings Pages:
+  Controls:
+    Switch (Toggle (0,1))
+	  

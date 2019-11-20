@@ -22,7 +22,8 @@ namespace HelloWorld
             //MainPage = new MDContactsPage();
             //MainPage = new TabbedPageExample();
             //MainPage = new PopupsExample();
-            MainPage = new NavigationPage(new ToolbarItemsExample());
+            //MainPage = new NavigationPage(new ToolbarItemsExample());
+            MainPage = new ControlsExample();
         }
 
         protected override void OnStart()
