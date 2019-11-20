@@ -16,10 +16,5 @@ namespace HelloWorld
         {
             InitializeComponent();
         }
-
-        private void Switch_Toggled(object sender, ToggledEventArgs e)
-        {
-            lblContent.IsVisible = e.Value;
-        }
     }
 }

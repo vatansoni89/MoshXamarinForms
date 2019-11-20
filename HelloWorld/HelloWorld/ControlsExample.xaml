@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="HelloWorld.ControlsExample">
     <StackLayout>
-        <Switch IsToggled="True" Toggled="Switch_Toggled" />
-        <Label Text="Content" x:Name="lblContent" />
+        <Switch IsToggled="True" x:Name="switchToggle" />
+        <Label Text="Content" x:Name="lblContent" IsVisible="{Binding Source={x:Reference switchToggle},Path=IsToggled}" />
     </StackLayout>
 </ContentPage>
