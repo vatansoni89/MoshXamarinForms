@@ -193,8 +193,13 @@ Tabbed Page: Tabs are based on Title (and Logo prop)
           <x:Arguments>
               <local:GreetPage/>
           </x:Arguments>
+
       </NavigationPage>
 
 Carosal Page: Swipe left or right or the pages.
   Almost like tabbed page but Only Content type page and its derived pages can be added.
   
+
+Popup and ActionSheet:
+  Popup: Yes-No kind of popup
+  ActionSheet: List of actions can pe shown and based on user click take action.
