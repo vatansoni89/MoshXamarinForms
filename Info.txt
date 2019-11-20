@@ -219,8 +219,12 @@ Forms and  Settings Pages:
 	    Unique Props:
 	      Increment
 	- Entry and editor:
+	    Entry:
+		  Its like textbox to capture single line of text. (Not multiple lines)
+		Editor:
+		  Allow multiple lines
+		  By default it fills its container (if we set bg color yellow etc) but in stacklayout it behaves normally so to fill it we use VerticalOptions="FillAndExpand".
 	    
-	  
 	  
 	  
 	  

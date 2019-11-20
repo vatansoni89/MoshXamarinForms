@@ -4,13 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HelloWorld.StepperControlExample">
+             x:Class="HelloWorld.EntryANdeditorControlExample">
     <ContentPage.Content>
         <StackLayout>
-            <Stepper Maximum="25" Minimum="5" Increment="5" Value="10" x:Name="Stepper" />
-            <Label Text="{Binding Source={x:Reference Stepper},Path=Value, StringFormat='{0:N0}'}"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Keyboard="Numeric" Placeholder="Phone" />
+            <Entry IsPassword="True" Completed="Entry_OnCompleted" TextChanged="Entry_OnTextChanged" />
+            <Editor Text="Hii from Editor" VerticalOptions="FillAndExpand"/>
+            <Label x:Name="lblName" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

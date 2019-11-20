@@ -25,7 +25,8 @@ namespace HelloWorld
             //MainPage = new NavigationPage(new ToolbarItemsExample());
             //MainPage = new ControlsExample();
             //MainPage = new SliderControlExample();
-            MainPage = new StepperControlExample();
+            //MainPage = new StepperControlExample();
+            MainPage = new EntryANdeditorControlExample();
         }
 
         protected override void OnStart()
