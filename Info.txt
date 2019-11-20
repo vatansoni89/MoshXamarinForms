@@ -210,4 +210,10 @@ Toolbar: Displays in top navigation bar (Primary and Secondary(as ...))
 Forms and  Settings Pages:
   Controls:
     Switch (Toggle (0,1))
+	Slider:
+	  Integer Format: StringFormat='{0:N0}'
+	  Maximum should be declared before minimum: 
+	    <Slider  Maximum="10" Minimum="5" x:Name="sldRating" />
+	  Events:
+	    ValueChanged
 	  

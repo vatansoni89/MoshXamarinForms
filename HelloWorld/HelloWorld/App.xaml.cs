@@ -23,7 +23,8 @@ namespace HelloWorld
             //MainPage = new TabbedPageExample();
             //MainPage = new PopupsExample();
             //MainPage = new NavigationPage(new ToolbarItemsExample());
-            MainPage = new ControlsExample();
+            //MainPage = new ControlsExample();
+            MainPage = new SliderControlExample();
         }
 
         protected override void OnStart()
