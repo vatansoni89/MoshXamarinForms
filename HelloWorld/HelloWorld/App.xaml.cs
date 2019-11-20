@@ -21,7 +21,8 @@ namespace HelloWorld
             //};
             //MainPage = new MDContactsPage();
             //MainPage = new TabbedPageExample();
-            MainPage = new PopupsExample();
+            //MainPage = new PopupsExample();
+            MainPage = new NavigationPage(new ToolbarItemsExample());
         }
 
         protected override void OnStart()

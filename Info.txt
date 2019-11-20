@@ -203,3 +203,6 @@ Carosal Page: Swipe left or right or the pages.
 Popup and ActionSheet:
   Popup: Yes-No kind of popup
   ActionSheet: List of actions can pe shown and based on user click take action.
+
+Toolbar: Displays in top navigation bar (Primary and Secondary(as ...))
+  It must be wrapped in NavigationPage (app.xaml.cs)
