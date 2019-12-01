@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        public static List<int> liInt { get; set; } = new List<int> { 0, 1 };
+
+        private static void Main(string[] args)
+        {
+            do
+            {
+                Console.WriteLine("Give length");
+                var length = int.Parse(Console.ReadLine());
+                for (int i = 1; i <= length - 2; i++)
+                {
+                    liInt.Add(liInt[i - 1] + liInt[i]);
+                }
+
+                foreach (var item in liInt)
+                {
+                    Console.WriteLine(item);
+                }
+                liInt = new List<int> { 0, 1 };
+                Console.ReadKey();
+            } while (true);
+        }
+    }
+}
