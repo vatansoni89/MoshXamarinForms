@@ -226,6 +226,7 @@ Forms and  Settings Pages:
 		  By default it fills its container (if we set bg color yellow etc) but in stacklayout it behaves normally so to fill it we use VerticalOptions="FillAndExpand".
     - Picker
 	- Date and Time picker
+	- Table View
 	    
 	  
 	  
