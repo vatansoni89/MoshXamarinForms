@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="HelloWorld.TableViewExample">
+             x:Class="HelloWorld.TableViewExample"
+             xmlns:local="clr-namespace:HelloWorld.Extensions">
     <TableView Intent="Form">
         <TableView.Root>
             <TableRoot>
@@ -12,12 +13,8 @@
                     <TextCell Text="Name" Detail="Mosh Hamidani" />
                     <EntryCell Label="Title" Placeholder="(eg shopping)" Completed="EntryCell_Completed" />
                     <SwitchCell Text="Notification" On="True" OnChanged="SwitchCell_OnChanged" />
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="13,0">
-                            <Label Text="Starts" VerticalOptions="Center"></Label>
-                            <DatePicker Date="1 Jan 2016" HorizontalOptions="EndAndExpand" />
-                        </StackLayout>
-                    </ViewCell>
+                    <local:DateCell Label="Start Date" />
+                    <local:DateCell Label="End Date" />
                 </TableSection>
             </TableRoot>
         </TableView.Root>
