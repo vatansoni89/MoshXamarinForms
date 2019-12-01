@@ -227,6 +227,9 @@ Forms and  Settings Pages:
     - Picker
 	- Date and Time picker
 	- Table View
+	- Custom Cells
+	    by ViewCell we create custom cell.
+	- Bindable Properties
 	    
 	  
 	  
