@@ -30,7 +30,7 @@ namespace HelloWorld
             var page = new ContactMethodsPage();
             page.ContactMethods.ItemSelected += (source, args) =>
             {
-                contactMethod.Text = args.SelectedItem.ToString();
+                lblContactMethod.Text = args.SelectedItem.ToString();
                 Navigation.PopAsync();
             };
 

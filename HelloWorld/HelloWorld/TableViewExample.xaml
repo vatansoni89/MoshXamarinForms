@@ -19,7 +19,7 @@
                         <StackLayout Orientation="Horizontal" Padding="13,5">
                             <Label Text="Contact Method" VerticalOptions="Center" />
                             <Label
-                                x:Name="contactMethod"
+                                x:Name="lblContactMethod"
                                 VerticalOptions="Center"
                                 HorizontalOptions="EndAndExpand"
                                 Text="None"
