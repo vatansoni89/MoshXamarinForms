@@ -230,6 +230,7 @@ Forms and  Settings Pages:
 	- Custom Cells
 	    by ViewCell we create custom cell.
 	- Bindable Properties
+	- Picker with Navigation
 	    
 	  
 	  

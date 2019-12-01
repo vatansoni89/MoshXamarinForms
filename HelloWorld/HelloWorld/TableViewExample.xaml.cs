@@ -24,5 +24,17 @@ namespace HelloWorld
         private void SwitchCell_OnChanged(object sender, ToggledEventArgs e)
         {
         }
+
+        private void ViewCell_Tapped(object sender, EventArgs e)
+        {
+            var page = new ContactMethodsPage();
+            page.ContactMethods.ItemSelected += (source, args) =>
+            {
+                contactMethod.Text = args.SelectedItem.ToString();
+                Navigation.PopAsync();
+            };
+
+            Navigation.PushAsync(page);
+        }
     }
 }
