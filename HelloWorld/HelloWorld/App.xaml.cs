@@ -26,7 +26,8 @@ namespace HelloWorld
             //MainPage = new ControlsExample();
             //MainPage = new SliderControlExample();
             //MainPage = new StepperControlExample();
-            MainPage = new EntryANdeditorControlExample();
+            //MainPage = new EntryANdeditorControlExample();
+            MainPage = new PickerControlExample();
         }
 
         protected override void OnStart()
