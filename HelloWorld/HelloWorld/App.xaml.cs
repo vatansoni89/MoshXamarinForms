@@ -27,7 +27,8 @@ namespace HelloWorld
             //MainPage = new SliderControlExample();
             //MainPage = new StepperControlExample();
             //MainPage = new EntryANdeditorControlExample();
-            MainPage = new PickerControlExample();
+            //MainPage = new PickerControlExample();
+            MainPage = new DateAndTimePickerExample();
         }
 
         protected override void OnStart()
